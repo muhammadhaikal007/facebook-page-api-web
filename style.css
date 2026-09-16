@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f0f2f5;
+    color: #1c1e21;
+    min-height: 100vh;
+}
+
+/* HEADER */
+
+.header {
+    background: #1877f2;
+    color: white;
+    padding: 40px 20px;
+}
+
+.header-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 16px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+
+/* CONTAINER UTAMA */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 35px auto;
+}
+
+
+/* INFORMASI PAGE */
+
+.page-info {
+    background: white;
+    padding: 22px 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+}
+
+.page-info h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.page-info p {
+    color: #65676b;
+}
+
+
+/* TOMBOL REFRESH */
+
+#refreshButton {
+    background: #1877f2;
+    color: white;
+    border: none;
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#refreshButton:hover {
+    background: #166fe5;
+}
+
+#refreshButton:active {
+    transform: scale(0.97);
+}
+
+
+/* AREA STATUS */
+
+#statusArea {
+    margin-top: 20px;
+}
+
+#loadingMessage {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: #65676b;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ERROR */
+
+#errorMessage {
+    background: #ffe5e5;
+    color: #b42318;
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* CONTAINER POSTING */
+
+#postsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+/* CARD POSTING FACEBOOK */
+
+.post-card {
+    background: white;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.post-message {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    white-space: pre-line;
+}
+
+.post-date {
+    font-size: 13px;
+    color: #65676b;
+    margin-bottom: 15px;
+}
+
+.post-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #1877f2;
+    font-weight: bold;
+}
+
+.post-link:hover {
+    text-decoration: underline;
+}
+
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #65676b;
+    font-size: 14px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+
+    .header {
+        padding: 30px 18px;
+    }
+
+    .header h1 {
+        font-size: 28px;
+    }
+
+    .container {
+        width: 94%;
+        margin-top: 20px;
+    }
+
+    .page-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    #refreshButton {
+        width: 100%;
+    }
+
+    .post-card {
+        padding: 18px;
+    }
+}
